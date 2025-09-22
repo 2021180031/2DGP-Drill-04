@@ -5,7 +5,7 @@ open_canvas()
 grass = load_image('grass.png')
 character = load_image('animation_sheet_final_final.png')
 
-GRASS_LEVEL=100
+
 
 
 
@@ -13,7 +13,7 @@ GRASS_LEVEL=100
 def draw_character(frame):
     clear_canvas()
     grass.draw(400, 30)
-    character.clip_draw(frame * 120, 0, 120, 120, 400, GRASS_LEVEL,400,400)
+    character.clip_draw(frame * 120, 0, 120, 120, 400, 250,400,400)
     update_canvas()
     delay(0.05)
 
