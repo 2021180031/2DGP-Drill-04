@@ -23,7 +23,13 @@ def next_frame(frame):
 
 frame=0
 while True:
-   draw_character(frame,0)
-   frame=next_frame(frame)
+    for x in range(0,5,1):
+      for y in range(0,10,1):
+        draw_character(frame,0)
+        frame=next_frame(frame)
+
+
+
+    delay(1)
 
 close_canvas()
