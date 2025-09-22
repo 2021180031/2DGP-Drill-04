@@ -13,7 +13,7 @@ character = load_image('animation_sheet_final_final.png')
 def draw_character(frame):
     clear_canvas()
     grass.draw(400, 30)
-    character.clip_draw(frame * 120, 140, 120, 120, 400, 250,400,400)
+    character.clip_draw(frame * 120, 270, 120, 120, 400, 250,400,400)
     update_canvas()
     delay(0.05)
 
