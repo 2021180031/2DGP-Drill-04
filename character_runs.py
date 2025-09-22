@@ -28,7 +28,26 @@ while True:
         draw_character(frame,0)
         frame=next_frame(frame)
 
+    delay(1)
 
+    for x in range(0,5,1):
+      for y in range(0,10,1):
+        draw_character(frame,140)
+        frame=next_frame(frame)
+
+    delay(1)
+
+    for x in range(0,5,1):
+      for y in range(0,10,1):
+        draw_character(frame,270)
+        frame=next_frame(frame)
+
+    delay(1)
+
+    for x in range(0,5,1):
+      for y in range(0,10,1):
+        draw_character(frame,400)
+        frame=next_frame(frame)
 
     delay(1)
 
