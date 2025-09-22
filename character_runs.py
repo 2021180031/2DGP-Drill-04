@@ -9,7 +9,7 @@ character = load_image('animation_sheet_final_final.png')
 
 
 
-
+#correction: "forth" animation works when y=400
 def draw_character(frame):
     clear_canvas()
     grass.draw(400, 30)
