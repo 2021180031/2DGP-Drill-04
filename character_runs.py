@@ -3,9 +3,9 @@ from pico2d import *
 open_canvas()
 
 grass = load_image('grass.png')
-character = load_image('FinalSampleImage.png')
+character = load_image('animation_sheet_final_final.png')
 
-GRASS_LEVEL=90
+GRASS_LEVEL=100
 
 
 
@@ -13,13 +13,13 @@ GRASS_LEVEL=90
 def draw_character(frame):
     clear_canvas()
     grass.draw(400, 30)
-    character.clip_draw(frame * 100, 0, 100, 100, 400, GRASS_LEVEL)
+    character.clip_draw(frame * 120, 0, 120, 120, 400, GRASS_LEVEL)
     update_canvas()
     delay(0.05)
 
 
 def next_frame(frame):
-    return (frame + 1) % 8
+    return (frame + 1) % 10
 
 frame=0
 while True:
